@@ -79,15 +79,16 @@ namespace FastDFS.Client.Component
         public static StorageServerInfo GetStoreStorage(string groupName)
         {
             TcpConnection trackerConnection = GetTrackerConnection(groupName);
-            if (null != _logger)
-                _logger.InfoFormat("连接Tracker服务器的IP是：{0},端口是{1}", trackerConnection.IpAddress, trackerConnection.Port);
-            Stream stream = trackerConnection.GetStream();
 
             if (null == trackerConnection)
             {
                 trackerConnection = GetTrackerConnection(groupName);
                 if (trackerConnection == null) return null;
             }
+
+            if (null != _logger)
+                _logger.InfoFormat("连接Tracker服务器的IP是：{0},端口是{1}", trackerConnection.IpAddress, trackerConnection.Port);
+            Stream stream = trackerConnection.GetStream();
 
             try
             {
