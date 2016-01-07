@@ -97,7 +97,7 @@ namespace FastDFS.Client.Service
                 _charset = charset.ToString();
             object monitorTimeout;
             if (ConfigReader.TryGetNodeValue(doc, MonitorTimeoutConfigItemName, out monitorTimeout))
-                _monitorTimeout = int.Parse(network_timeout.ToString());
+                _monitorTimeout = int.Parse(monitorTimeout.ToString());
             _batchId = DateTime.Now.Ticks.ToString();
 
             if (null != _logger)
