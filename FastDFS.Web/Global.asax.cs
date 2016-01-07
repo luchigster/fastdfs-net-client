@@ -8,8 +8,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 using FastDFS.Client.Service;
-using log4net;
-using log4net.Config;
+using Common.Logging;
 
 namespace FastDFS.Web
 {
@@ -21,7 +20,6 @@ namespace FastDFS.Web
         {
             try
             {
-                XmlConfigurator.Configure(new FileInfo(Server.MapPath(@"~/Config/log4net.config")));
                 FastDFSService.Start();
 
                 if (null != _logger)

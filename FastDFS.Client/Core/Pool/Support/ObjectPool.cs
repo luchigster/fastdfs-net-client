@@ -13,7 +13,7 @@ using System.Reflection;
 using System.Threading;
 using FastDFS.Client.Component;
 using FastDFS.Client.Service;
-using log4net;
+using Common.Logging;
 
 namespace FastDFS.Client.Core.Pool.Support
 {

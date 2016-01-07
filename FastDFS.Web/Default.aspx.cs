@@ -12,7 +12,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using FastDFS.Client.Component;
 using FastDFS.Client.Service;
-using log4net;
+using Common.Logging;
 
 namespace FastDFS.Web
 {

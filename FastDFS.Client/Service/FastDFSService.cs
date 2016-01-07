@@ -11,7 +11,7 @@ using System.Reflection;
 using System.Xml;
 using FastDFS.Client.Component;
 using FastDFS.Client.Core;
-using log4net;
+using Common.Logging;
 
 namespace FastDFS.Client.Service
 {

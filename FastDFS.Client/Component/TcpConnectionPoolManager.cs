@@ -15,7 +15,7 @@ using System.Xml;
 using FastDFS.Client.Core;
 using FastDFS.Client.Core.Pool;
 using FastDFS.Client.Core.Pool.Support;
-using log4net;
+using Common.Logging;
 using ThreadContext = FastDFS.Client.Core.Threading.ThreadContext;
 
 namespace FastDFS.Client.Component
