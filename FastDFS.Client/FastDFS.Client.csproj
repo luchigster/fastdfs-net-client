@@ -89,7 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="config\FastDFS.config" />
-    <None Include="Core\FastDFS.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
